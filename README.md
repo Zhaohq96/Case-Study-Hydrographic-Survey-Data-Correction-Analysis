@@ -65,7 +65,7 @@ By examining value patterns—such as UNIX-like timestamps, smooth increasing su
 8. `cable_offset_y_m`  
 9. `cable_lock`   
 
-#### **CCOG (Cable Center of Gravity / Real-World Cable Position)**  
+#### **CCOG (Cable Center of Gravity)**  
 1. `unix_time`  
 2. `time_s`  
 3. `cable_easting_m`  
