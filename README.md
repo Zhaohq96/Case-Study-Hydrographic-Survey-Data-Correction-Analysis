@@ -46,7 +46,7 @@ The raw VCOG and CCOG files contain no headers, so the first step is to infer th
 - **Physical constraints** described in the case study:
   - VCOG contains the cart’s world position and the algorithm’s cable offsets.
   - CCOG contains the cable’s world position (cart position + rotated offsets).
-  - Some files may include an optional `cable_lock` quality indicator.
+  - Some files may include an optional `cable_lock` quality indicator (integer).
 
 By examining value patterns—such as UNIX-like timestamps, smooth increasing survey time, large-scale Easting/Northing coordinates, small-magnitude offsets, and unit-length direction vectors—we can uniquely map each column to its physical meaning.
 
@@ -63,7 +63,7 @@ By examining value patterns—such as UNIX-like timestamps, smooth increasing su
 6. `vehicle_heading_deg`  
 7. `cable_offset_x_m`  
 8. `cable_offset_y_m`  
-9. `cable_lock` *(optional)*  
+9. `cable_lock`   
 
 #### **CCOG (Cable Center of Gravity / Real-World Cable Position)**  
 1. `unix_time`  
@@ -77,5 +77,5 @@ By examining value patterns—such as UNIX-like timestamps, smooth increasing su
 9. `dir_x`  
 10. `dir_y`  
 11. `dir_z`  
-12. `cable_lock` *(optional)*  
+12. `cable_lock`  
 
