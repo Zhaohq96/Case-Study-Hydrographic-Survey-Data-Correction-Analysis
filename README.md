@@ -37,3 +37,45 @@ You can install them with:
 pip install numpy pandas matplotlib
 ```
 
+## Ingest and Decipher the Data
+
+The raw VCOG and CCOG files contain no headers, so the first step is to infer the meaning of each column using:
+
+- **Numerical ranges** (e.g., timestamps, ENU coordinates, offsets).
+- **Cross-file consistency** (VCOG vs. CCOG structure).
+- **Physical constraints** described in the case study:
+  - VCOG contains the cart’s world position and the algorithm’s cable offsets.
+  - CCOG contains the cable’s world position (cart position + rotated offsets).
+  - Some files may include an optional `cable_lock` quality indicator.
+
+By examining value patterns—such as UNIX-like timestamps, smooth increasing survey time, large-scale Easting/Northing coordinates, small-magnitude offsets, and unit-length direction vectors—we can uniquely map each column to its physical meaning.
+
+---
+
+### **Final Identified Column Headers**
+
+#### **VCOG (Vehicle Center of Gravity)**  
+1. `unix_time`  
+2. `time_s`  
+3. `vehicle_easting_m`  
+4. `vehicle_northing_m`  
+5. `vehicle_height_m`  
+6. `vehicle_heading_deg`  
+7. `cable_offset_x_m`  
+8. `cable_offset_y_m`  
+9. `cable_lock` *(optional)*  
+
+#### **CCOG (Cable Center of Gravity / Real-World Cable Position)**  
+1. `unix_time`  
+2. `time_s`  
+3. `cable_easting_m`  
+4. `cable_northing_m`  
+5. `cable_height_m`  
+6. `cable_offset_x_m`  
+7. `cable_offset_y_m`  
+8. `cable_offset_z_m`  
+9. `dir_x`  
+10. `dir_y`  
+11. `dir_z`  
+12. `cable_lock` *(optional)*  
+
