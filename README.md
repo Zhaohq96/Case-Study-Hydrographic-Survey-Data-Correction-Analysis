@@ -99,13 +99,13 @@ To diagnose the GPS orientation issue, two independent estimates of the cart’s
 2. **Track-derived heading**, computed from consecutive cart positions  
    (`vehicle_easting_m`, `vehicle_northing_m`)
 
-The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the \((-180^\circ,\;180^\circ]\) range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
+The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the (-180°, +180°] range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
 
 <img width="541" height="407" alt="image" src="https://github.com/user-attachments/assets/13306902-5125-4397-b435-8545980b7e78" />
 
 
 ## Reconstruct the true path
-Based on the description in the internal email, the intended +90° correction was mistakenly applied as –90°. Therefore, a +180° adjustment was applied to the heading values in the VCOG file, and the cable’s true position was recomputed from the corrected heading and the EM offsets. The cart trajectory, the original cable path, and the corrected cable path were then visualized for comparison (as shown in the figure below).
+Based on the description in the internal email, the intended +90° correction was mistakenly applied as –90°. Therefore, a +180° adjustment was applied to the heading values in the VCOG file, and the cable’s true position was recomputed from the corrected heading and the EM offsets. The cart trajectory, the original cable path, and the corrected cable path were then visualized for comparison (as shown in the figure below). The file with corrected path will be named with suffix '_corrected'.
 
 <img width="708" height="692" alt="image" src="https://github.com/user-attachments/assets/b0e79b39-6098-4782-9a6b-f8eda60fc80e" />
 
