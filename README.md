@@ -19,11 +19,10 @@ During the Spaarnwoude field trial, cable-tracking data was collected using a ca
    After applying the correction (or using the raw data), evaluate the consistency and accuracy of the cable tracking. How well does the algorithm perform?
 
 ## Setup
-This repository consists of three main components:
+This repository consists of two main components:
 
 1. **A Jupyter Notebook (`.ipynb`)** that serves as the primary execution file.  
 2. **Several Python modules (`.py` files)** that define reusable functions called by the notebook.  
-3. **A shell script** used for automated batch processing.
 
 The project uses **Python 3.12** and requires the following dependencies:
 
