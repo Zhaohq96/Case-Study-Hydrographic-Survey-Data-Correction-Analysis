@@ -1,5 +1,5 @@
 # Case-Study-Hydrographic-Survey-Data-Correction-Analysis
-## Instruction
+## About
 This repository contains a complete analysis and correction pipeline for the Spaarnwoude hydrographic cable-tracking case study, designed as part of an ML Engineer internship assessment. 
 
 ## Problem Statement
@@ -37,7 +37,15 @@ You can install them with:
 pip install numpy pandas matplotlib
 ```
 
-## 
+## Usage
+I recommend using the Jupyter Notebook to reproduce the full experiment. The notebook provides a step-by-step walkthrough covering data interpretation, heading diagnostics, cable path reconstruction, and the subsequent analysis and evaluation. The roles of each file in this repository are as follows:
+
+1. **CS_Hydrographic.ipynb** serves as the primary execution file.  
+2. **headers.py** provides the headers to the raw data.  
+3. **diagnose_heading.py** diagnoses and visualizes the heading issue.
+4. **reconstruct_cable.py** reconstructs the true path of cable according to the description.
+
+To reproduce the results, please follow the step-by-step instructions in **CS_Hydrographic.ipynb**.
 
 ## Ingest and Decipher the Data
 
