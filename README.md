@@ -89,6 +89,11 @@ To diagnose the GPS orientation issue, two independent estimates of the cart’s
 2. **Track-derived heading**, computed from consecutive cart positions  
    (`vehicle_easting_m`, `vehicle_northing_m`)
 
-Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the \((-180^\circ,\;180^\circ]\) range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
+The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the \((-180^\circ,\;180^\circ]\) range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
+
+<img width="812" height="611" alt="image" src="https://github.com/user-attachments/assets/13306902-5125-4397-b435-8545980b7e78" />
+
+## Reconstruct the true path
+
 
 
