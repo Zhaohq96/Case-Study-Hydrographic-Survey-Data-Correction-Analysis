@@ -79,3 +79,32 @@ By examining value patterns—such as UNIX-like timestamps, smooth increasing su
 11. `dir_z`  
 12. `cable_lock`  
 
+The file 'headers.py' is to add header information to the raw files. The file with added header will be named with suffix '_identified'.
+
+## Diagnose heading issue
+
+To diagnose the GPS orientation issue, two independent estimates of the cart’s heading are compared:
+
+1. **GPS-reported heading** (`vehicle_heading_deg`)  
+2. **Track-derived heading**, computed from consecutive cart positions  
+   (`vehicle_easting_m`, `vehicle_northing_m`)
+
+### **1. Compute the Track-Derived Heading**
+
+For each pair of consecutive positions:
+
+\[
+(E_t, N_t)
+\]
+
+the true direction of travel is:
+
+\[
+\theta_{\text{track}} = \text{atan2}(\Delta E,\; \Delta N)
+\]
+
+In code:
+
+```python
+bearing = np.degrees(np.arctan2(dE, dN))
+
