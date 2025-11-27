@@ -96,4 +96,13 @@ The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. F
 ## Reconstruct the true path
 
 
+<img width="1062" height="1038" alt="image" src="https://github.com/user-attachments/assets/b0e79b39-6098-4782-9a6b-f8eda60fc80e" />
+
+<img width="819" height="609" alt="image" src="https://github.com/user-attachments/assets/a79ab592-3cfd-47c8-bdaa-ebe6b9420333" />
+
+<img width="1044" height="999" alt="image" src="https://github.com/user-attachments/assets/1555e0e9-1687-45a3-8d14-a1a5d5027ca5" />
+
+<img width="1023" height="846" alt="image" src="https://github.com/user-attachments/assets/98717b7c-d1b9-4fb8-b5ae-073f19acad5d" />
+
+<img width="648" height="1691" alt="image" src="https://github.com/user-attachments/assets/9560c3b3-b76b-4f80-a2ba-d33ed269662b" />
 
