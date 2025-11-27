@@ -95,19 +95,30 @@ The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. F
 
 
 ## Reconstruct the true path
-
+Based on the description in the internal email, the intended +90° correction was mistakenly applied as –90°. Therefore, a +180° adjustment was applied to the heading values in the VCOG file, and the cable’s true position was recomputed from the corrected heading and the EM offsets. The cart trajectory, the original cable path, and the corrected cable path were then visualized for comparison (as shown in the figure below).
 
 <img width="708" height="692" alt="image" src="https://github.com/user-attachments/assets/b0e79b39-6098-4782-9a6b-f8eda60fc80e" />
 
+## Results analysis and visualization
+After reconstructing the corrected cable path, the results were further analyzed to evaluate the performance of the cable-tracking algorithm.
+
+### Mean difference between raw and corrected cable position
+The mean difference between the raw and corrected cable positions is used to quantify the impact of the heading issue on the reconstructed path. The figure below (using Experiment 1 as an example) visualizes the distribution of distance errors between the original and corrected cable trajectories.
 
 <img width="546" height="406" alt="image" src="https://github.com/user-attachments/assets/a79ab592-3cfd-47c8-bdaa-ebe6b9420333" />
 
+### Error vector field
+The error vector field provides a spatial visualization of how the cable reconstruction deviates between the raw and corrected results. Each vector represents both the magnitude and direction of the positional error at a given point along the trajectory. This allows the observation of systematic directional biases introduced by the heading issue and how they are resolved after applying the correction (using Experiment 1 as an example).
 
 <img width="696" height="666" alt="image" src="https://github.com/user-attachments/assets/1555e0e9-1687-45a3-8d14-a1a5d5027ca5" />
 
+### Error heatmap
+The error heatmap illustrates how the positional error between the raw and corrected cable paths varies across space. By mapping error magnitude to color intensity, the heatmap highlights regions where the heading issue caused larger deviations and areas where the reconstruction remained relatively stable. This provides an intuitive spatial overview of error concentration along the survey line.
 
 <img width="682" height="564" alt="image" src="https://github.com/user-attachments/assets/98717b7c-d1b9-4fb8-b5ae-073f19acad5d" />
 
+### Offset-to-Error mapping
+The offset-to-error mapping examines how the positional error varies as a function of the EM offset magnitude. By plotting the world-coordinate reconstruction error against the lateral offset distance, this analysis reveals how sensor performance changes with increasing separation from the cable. A near-linear trend indicates that larger offsets produce proportionally larger reconstruction errors, consistent with expected EM signal attenuation.
 
 <img width="432" height="1127" alt="image" src="https://github.com/user-attachments/assets/9560c3b3-b76b-4f80-a2ba-d33ed269662b" />
 
