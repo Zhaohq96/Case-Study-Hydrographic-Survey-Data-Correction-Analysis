@@ -91,18 +91,24 @@ To diagnose the GPS orientation issue, two independent estimates of the cart’s
 
 The file 'diagnose_heading.py' is to diagnose and visualize the heading issue. Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the \((-180^\circ,\;180^\circ]\) range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
 
-<img width="812" height="611" alt="image" src="https://github.com/user-attachments/assets/13306902-5125-4397-b435-8545980b7e78" />
+<img width="541" height="407" alt="image" src="https://github.com/user-attachments/assets/13306902-5125-4397-b435-8545980b7e78" />
+
 
 ## Reconstruct the true path
 
 
-<img width="1062" height="1038" alt="image" src="https://github.com/user-attachments/assets/b0e79b39-6098-4782-9a6b-f8eda60fc80e" />
+<img width="708" height="692" alt="image" src="https://github.com/user-attachments/assets/b0e79b39-6098-4782-9a6b-f8eda60fc80e" />
 
-<img width="819" height="609" alt="image" src="https://github.com/user-attachments/assets/a79ab592-3cfd-47c8-bdaa-ebe6b9420333" />
 
-<img width="1044" height="999" alt="image" src="https://github.com/user-attachments/assets/1555e0e9-1687-45a3-8d14-a1a5d5027ca5" />
+<img width="546" height="406" alt="image" src="https://github.com/user-attachments/assets/a79ab592-3cfd-47c8-bdaa-ebe6b9420333" />
 
-<img width="1023" height="846" alt="image" src="https://github.com/user-attachments/assets/98717b7c-d1b9-4fb8-b5ae-073f19acad5d" />
 
-<img width="648" height="1691" alt="image" src="https://github.com/user-attachments/assets/9560c3b3-b76b-4f80-a2ba-d33ed269662b" />
+<img width="696" height="666" alt="image" src="https://github.com/user-attachments/assets/1555e0e9-1687-45a3-8d14-a1a5d5027ca5" />
+
+
+<img width="682" height="564" alt="image" src="https://github.com/user-attachments/assets/98717b7c-d1b9-4fb8-b5ae-073f19acad5d" />
+
+
+<img width="432" height="1127" alt="image" src="https://github.com/user-attachments/assets/9560c3b3-b76b-4f80-a2ba-d33ed269662b" />
+
 
