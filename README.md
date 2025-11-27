@@ -1,4 +1,7 @@
 # Case-Study-Hydrographic-Survey-Data-Correction-Analysis
+First relase: 27/11/2025
+Last update: 27/11/2025
+Version: 1.0
 ## About
 This repository contains a complete analysis and correction pipeline for the Spaarnwoude hydrographic cable-tracking case study, designed as part of an ML Engineer internship assessment. 
 
