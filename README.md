@@ -89,22 +89,6 @@ To diagnose the GPS orientation issue, two independent estimates of the cart’s
 2. **Track-derived heading**, computed from consecutive cart positions  
    (`vehicle_easting_m`, `vehicle_northing_m`)
 
-### **1. Compute the Track-Derived Heading**
+Firstly, the cart’s actual direction of travel was computed and compared against the recorded GPS heading. The heading difference was then normalized into the \((-180^\circ,\;180^\circ]\) range. The wrapped heading error was visualized, and its mean value was calculated (as shown in the figure below).
 
-For each pair of consecutive positions:
-
-\[
-(E_t, N_t)
-\]
-
-the true direction of travel is:
-
-\[
-\theta_{\text{track}} = \text{atan2}(\Delta E,\; \Delta N)
-\]
-
-In code:
-
-```python
-bearing = np.degrees(np.arctan2(dE, dN))
 
