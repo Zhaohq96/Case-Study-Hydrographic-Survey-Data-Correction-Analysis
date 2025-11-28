@@ -140,4 +140,8 @@ The offset-to-error mapping examines how the positional error varies as a functi
 ## Final Assessment
 This tutorial evaluates the performance of the cable tracking algorithm. We can observe:
 1. **Mean Difference**: average difference of 6.3m, which is far worse than expected TOC accuracy.
-2. **Error Vector Field**: the corrected vectors (green) are 
+2. **Error Vector Field**: the corrected vectors (green) are small-magnitude but noisy, oriented differently along different sides of the square.
+3. **Error Heatmap**: strong error concentrations near corners and turns, indicating that cable reconstruction quality is motion-dependent.
+4. **Offset-to-Error Mapping**: the plots shows an extremely strong linear relationship, indicating the algorithm are sensitive to distance.
+
+In summary, the cable-tracking algorithm does not meet accuracy expectations for TOC runs after applying the correct heading. The localization is unstable, highly affected by offset-dependent noise.
