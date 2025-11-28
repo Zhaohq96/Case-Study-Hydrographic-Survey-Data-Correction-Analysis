@@ -63,7 +63,7 @@ The raw VCOG and CCOG files contain no headers, so the first step is to infer th
   - CCOG contains the cable’s world position (cart position + rotated offsets).
   - Some files may include an optional `cable_lock` quality indicator (integer).
 
-By examining value patterns—such as UNIX-like timestamps, smooth increasing survey time, large-scale Easting/Northing coordinates, small-magnitude offsets, and unit-length direction vectors—we can uniquely map each column to its physical meaning.
+By examining value patterns, such as UNIX-like timestamps, smooth increasing survey time, large-scale Easting/Northing coordinates, small-magnitude offsets, and unit-length direction vectors, we can uniquely map each column to its physical meaning.
 
 ---
 
