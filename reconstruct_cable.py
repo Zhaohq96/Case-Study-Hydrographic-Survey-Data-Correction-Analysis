@@ -15,7 +15,6 @@ def reconstruct_cable(df_v: pd.DataFrame, heading_correction_deg=180.0):
     dx = df_v["cable_offset_x_m"].values
     dy = df_v["cable_offset_y_m"].values
 
-    # Local → world frame
     dN = dx * np.cos(psi) - dy * np.sin(psi)
     dE = dx * np.sin(psi) + dy * np.cos(psi)
 
