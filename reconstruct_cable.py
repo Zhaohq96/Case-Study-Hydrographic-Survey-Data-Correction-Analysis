@@ -39,9 +39,3 @@ def process_vcog_to_corrected_ccog(path_vcog_identified: str):
 
     print(f"[reconstruct] Wrote corrected file: {new_path}")
     return new_path
-
-
-if __name__ == "__main__":
-    process_vcog_to_corrected_ccog(
-        r"D:\Intern\Spaarnwoude\Exp_1_VCoG_TOC_identified.csv"
-    )
