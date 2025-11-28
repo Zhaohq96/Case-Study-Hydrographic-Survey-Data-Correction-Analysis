@@ -37,7 +37,3 @@ def diagnose_heading_from_vcog(path_str: str):
 
     return error
 
-if __name__ == "__main__":
-    diagnose_heading_from_vcog(
-        r"D:\Intern\Spaarnwoude\Exp_1_VCoG_TOC_identified.csv"
-    )
