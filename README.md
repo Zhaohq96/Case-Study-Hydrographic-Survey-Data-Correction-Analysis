@@ -137,4 +137,7 @@ The offset-to-error mapping examines how the positional error varies as a functi
 
 <img width="432" height="1127" alt="image" src="https://github.com/user-attachments/assets/9560c3b3-b76b-4f80-a2ba-d33ed269662b" />
 
-
+## Final Assessment
+This tutorial evaluates the performance of the cable tracking algorithm. We can observe:
+1. **Mean Difference**: average difference of 6.3m, which is far worse than expected TOC accuracy.
+2. **Error Vector Field**: the corrected vectors (green) are 
