@@ -55,7 +55,3 @@ def process_file_add_header(path_str: str):
 
     return new_path
 
-if __name__ == "__main__":
-    # Example
-    process_file_add_header(r"D:\Intern\Spaarnwoude\Exp_1_VCoG_TOC.csv")
-    process_file_add_header(r"D:\Intern\Spaarnwoude\Exp_1_CCoG_TOC.csv")
